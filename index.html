@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matias Bueno"> <!--  AUTOR   -->
+    <meta name="keyword" content="calculadora de promedios">
+    <link rel="shortcut icon" type="image/png" href="assets/img/calculadora.png"> <!-- FAVICON -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Calculadora de Promedios</title>
+</head>
+
+<body>
+    <section id="section1">
+        <h1>Notas Finales</h1>
+        <label>Nombre</label>
+        <input id="Nombre">
+        <label>Carrera</label>
+        <input id="Carrera">
+    </section>
+    <section id="section2">
+        <br><br>
+        <table border ="10"> <!-- BORDE PARA LA TABLA COMPLETA -->
+            <thead>
+                <tr> <!-- ENCABEZADOS DE LA TABLA -->
+                    <th>Ramo</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td><input type="number" id="n1html"></td>
+                    <!-- FORMATO INPUT PARA QUE EL USUARIO AGREGUE MANUALMENTE LAS NOTAS EN LOS LUGARES CORRESPONDIENTES -->
+                    <td><input type="text" id="n2html"></td>
+                    <td><input type="text" id="n3html"></td>
+                    <td id="promediohtml"></td>
+                    <!-- ESPACIO PARA QUE AL CALCULAR SE AGREGUE EL RESULTADO FINAL DE LA OPERACION -->
+                    <td><input type="button" value="Calcular" onclick="CalcularPromediohtml()"></td>
+                    <!-- OPERACION PARA LLAMAR A LA OPERACION EN JS -->
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td><input type="text" id="n1css"></td>
+                    <td><input type="text" id="n2css"></td>
+                    <td><input type="text" id="n3css"></td>
+                    <td id="promediocss"></td>
+                    <td><input type="button" value="Calcular" onclick="CalcularPromediocss()"></td>
+                </tr>
+                <tr>
+                    <td>JS</td>
+                    <td><input type="text" id="n1js"></td>
+                    <td><input type="text" id="n2js"></td>
+                    <td><input type="text" id="n3js"></td>
+                    <td id="promediojs"></td>
+                    <td><input type="button" value="Calcular" onclick="CalcularPromediojs()"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <p id="promediofinal"></p>
+        <input type="button" value="Calcular" onclick="CalcularPromediofinal()">
+        <!-- <button type="submit" class="boton">Enviar</button> --> <!-- BOTON PARA ENVIAR LOS RESULTADOS -->
+    </section>
+    <script src="https://kit.fontawesome.com/b63e9fc00a.js" crossorigin="anonymous"></script>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>

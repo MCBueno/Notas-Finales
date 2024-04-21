@@ -1,0 +1,22 @@
+body {
+    font-family: "Kanit";
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    height: 200px;
+}
+
+thead {
+    background-color:rgb(65, 64, 64) ;
+    color: white;
+}
+
+th, td {
+    width: 150px;   
+}
+
+/* tr:nth-child(even){
+    background-color: grey;
+} */
